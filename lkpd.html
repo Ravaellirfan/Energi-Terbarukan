@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LKPD - Energi Terbarukan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('yu.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: #ffee58 !important;
+    }
+
+    .pdf-container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      margin: 120px auto 50px;
+      max-width: 960px;
+    }
+
+    .pdf-frame {
+      width: 100%;
+      height: 720px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bi bi-globe2 me-2"></i>Energi Terbarukan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link" href="beranda.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="judul.html">Judul</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="petunjuk.html">Petunjuk</a></li>
+          <li class="nav-item"><a class="nav-link" href="modul.html">Modul</a></li>
+          <li class="nav-item"><a class="nav-link active" href="lkpd.html">LKPD</a></li>
+          <li class="nav-item"><a class="nav-link" href="materi.html">Materi</a></li>
+          <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container pdf-container">
+    <h2 class="text-white text-center fw-bold mb-4"><i class="bi bi-file-earmark-pdf-fill me-2"></i>LKPD Energi Terbarukan</h2>
+    <iframe class="pdf-frame" src="ku.pdf"></iframe>
+  </div>
+
+  <footer>
+    &copy; Website By : Marifatus Soleha 2113022028 Pendidikan Fisika
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

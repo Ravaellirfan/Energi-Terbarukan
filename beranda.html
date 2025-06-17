@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beranda - Energi Terbarukan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('yu.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: white !important;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: #ffee58 !important;
+    }
+
+    main {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .glass-box {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      text-align: center;
+    }
+
+    .btn-warning {
+      background-color: #ffee58;
+      color: #000;
+      border: none;
+    }
+
+    .btn-warning:hover {
+      background-color: #fff176;
+    }
+
+    footer {
+      padding: 30px 0 15px;
+      color: #fff;
+      text-align: center;
+      font-size: 0.9rem;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .glass-box {
+        padding: 20px;
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-globe2 me-2"></i>Energi Terbarukan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link active" href="beranda.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="judul.html">Judul</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="petunjuk.html">Petunjuk</a></li>
+          <li class="nav-item"><a class="nav-link" href="modul.html">Modul</a></li>
+          <li class="nav-item"><a class="nav-link" href="lkpd.html">LKPD</a></li>
+          <li class="nav-item"><a class="nav-link" href="materi.html">Materi</a></li>
+          <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="mt-5 pt-5">
+    <div class="glass-box text-white mx-3">
+      <h2 class="fw-bold mb-3"><i class="bi bi-tree-fill me-2"></i>Selamat Datang</h2>
+      <p class="fs-5">di Platform Pembelajaran Website <strong>Energi Terbarukan</strong></p>
+      <p class="mt-3">Pembelajaran berbasis problem based learning untuk meningkatkan kemampuan berargumentasi peserta didik SMA. </p>
+        <p class="mt-3">Website ini menyediakan berbagai materi, konten interaktif, dan menarik untuk membantu peserta didik memahami tentang energi terbarukan dan dampaknya. </p>
+      <a href="judul.html" class="btn btn-warning mt-4 fw-bold px-4 rounded-pill">
+        <i class="bi bi-book-half me-2"></i>Mulai Belajar
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; Website By : Marifatus Soleha 2113022028 Pendidikan Fisika
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

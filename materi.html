@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materi - Energi Terbarukan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('yu.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: #ffee58 !important;
+    }
+
+    .glass-box {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      margin: 120px auto 50px;
+      max-width: 960px;
+    }
+
+    .materi-menu {
+      list-style: none;
+      padding: 0;
+    }
+
+    .materi-menu li {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 18px 24px;
+      margin-bottom: 18px;
+      color: white;
+      font-size: 1.15rem;
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+
+    .materi-menu li:hover {
+      background: rgba(255, 255, 255, 0.2);
+      color: #ffee58;
+    }
+
+    .materi-content-justify {
+      text-align: justify;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-soal.selected-jawab {
+      border: 2px solid #ffee58;
+      background: rgba(255, 238, 88, 0.15);
+      color: #ffee58;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bi bi-globe2 me-2"></i>Energi Terbarukan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link" href="beranda.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="judul.html">Judul</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="petunjuk.html">Petunjuk</a></li>
+          <li class="nav-item"><a class="nav-link" href="modul.html">Modul</a></li>
+          <li class="nav-item"><a class="nav-link" href="lkpd.html">LKPD</a></li>
+          <li class="nav-item"><a class="nav-link active" href="materi.html">Materi</a></li>
+          <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container glass-box">
+    <h2 class="text-white text-center fw-bold mb-4"><i class="bi bi-book-half me-2"></i>Menu Materi Energi Terbarukan</h2>
+    <ul class="materi-menu">
+      <li id="menu-pengertian" style="cursor:pointer;"><i class="bi bi-chevron-right"></i> Pengertian Energi Terbarukan dan Macam-macam Energi Terbarukan</li>
+      <li id="menu-manfaat" style="cursor:pointer;"><i class="bi bi-chevron-right"></i> Manfaat Energi Terbarukan</li>
+      <li id="menu-kelebihan" style="cursor:pointer;"><i class="bi bi-chevron-right"></i> Kelebihan Energi Terbarukan</li>
+      <li id="menu-kekurangan" style="cursor:pointer;"><i class="bi bi-chevron-right"></i> Kekurangan Energi Terbarukan</li>
+      <li id="menu-latihan" style="cursor:pointer;"><i class="bi bi-chevron-right"></i> Latihan Soal</li>
+    </ul>
+    <div id="materi-pengertian-content" class="mt-4 materi-content-justify" style="display:none;">
+      <h3 class="fw-bold">MATERI</h3>
+      <h4 class="fw-bold">PENGERTIAN ENERGI TERBARUKAN</h4>
+      <h5 class="fw-bold">Judul: Definisi Energi Terbarukan</h5>
+      <p><b>Apa itu energi terbarukan?</b><br>
+      Energi terbarukan adalah energi yang berasal dari proses alam yang berkelanjutan, seperti tenaga surya, tenaga angin, arus air, proses biologi, dan panas bumi. Energi terbarukan senantiasa tersedia di alam dalam waktu yang relatif sangat panjang, karena merupakan energi berkelanjutan.</p>
+      <div class="text-center mb-3">
+        <img src="m1.jpg" alt="Proyek pembangkit listrik tenaga angin" class="img-fluid rounded" style="max-width:400px;">
+        <div class="small mt-2">Proyek pembangkit listrik tenaga angin (antaranews.com)</div>
+      </div>
+      <p>Gambar tersebut adalah salah satu penggunaan energi terbarukan yaitu energi angin, proyek pembangkit listrik tenaga angin ini memiliki selubung mesin (nacelle) yang terpasang di lokasi tertinggi di ketinggian 5.305 meter. Turbin angin tersebut dirancang untuk tahan terhadap lingkungan dan kondisi cuaca ekstrem, termasuk suhu yang sangat rendah, radiasi ultraviolet yang kuat dan badai petir yang sering terjadi pada ketinggian ultratinggi. Pembangkit listrik ramah lingkungan ini dapat menghemat sekitar 73.100 ton batu bara standar pertahun dan mengurangi emisi karbon dioksida sekitar 182.800 ton.</p>
+      <h5 class="fw-bold mt-4">CONTOH ENERGI TERBARUKAN</h5>
+      <ol>
+        <li><b>Energi surya</b><br>
+          Energi surya adalah energi yang berupa sinar dan panas dari matahari. Energi ini dapat dimanfaatkan dengan menggunakan serangkaian teknologi seperti pemanas surya, fotovoltaik surya, listrik panas surya, dan fotosintesis buatan.<br>
+          Teknologi energi surya dikategorikan menjadi dua kelompok, yakni teknologi pemanfaatan pasif dan teknologi pemanfaatan aktif. Contoh pemanfaatan energi surya secara aktif adalah penggunaan panel fotovoltaik dan panel penyerap panas, sedangkan contoh pemanfaatan energi surya secara pasif meliputi mengarahkan bangunan ke arah matahari, memilih bangunan dengan massa termal atau kemampuan dispersi cahaya yang baik, dan merancang ruangan dengan sirkulasi udara alami.<br>
+          Tahun 2011, Badan Energi Internasional menyatakan bahwa ”perkembangan teknologi surya yang terjangkau tidak habis, dan bersih akan memberikan keuntungan jangka panjang yang besar”.
+        </li>
+      </ol>
+      <div class="text-center mb-3">
+        <img src="m2.jpg" alt="Pemanas air surya terhadap matahari" class="img-fluid rounded" style="max-width:400px;">
+        <div class="small mt-2">Pemanas air surya terhadap matahari untuk menghasilkan penyerapan (id.wikipedia.org)</div>
+      </div>
+      <p>Gambar di atas merupakan sistem air panas surya menggunakan sinar matahari untuk memanaskan air. Daerah yang menggunakan pemanasan air tersebut biasanya daerah dengan lintang bujur geografis rendah (di bawah 40 derajat), 60% - 70% air panas untuk keperluan rumah tangga dengan temperatur sampai dengan 60 derajat dapat diperoleh dengan menggunakan sistem pemanas surya. Jenis pemanas air surya yang umum digunakan adalah plat datar dengan kaca (44%) untuk kebutuhan air panas rumah tangga, dan kolektor plastik tanpa kaca (21%) digunakan untuk memanaskan kolam renang.</p>
+      <div class="text-center mb-3">
+        <img src="m3.jpg" alt="Penggunaan panel surya di rumah" class="img-fluid rounded" style="max-width:400px;">
+        <div class="small mt-2">Penggunaan panel surya di rumah (kompas.com)</div>
+      </div>
+      <p>Gambar di atas merupakan penggunaan panel surya di rumah. Penggunaan panel surya di rumah memiliki beberapa dampak positif seperti, hemat biaya listrik, listrik tetap menyala saat ada pemadaman, dan dapat meningkatkan nilai rumah seperti yang dijelaskan dalam sebuah studi di Berkeley National Laboratory bahwa panel fotovoltaik surya dipandang sebagai peningkatan nilai jual. Pemasangan panel surya umumnya akan memberikan dampak lingkungan yang lebih kecil dibandingkan dengan penggunaan bahan bakar fosil.</p>
+      <ol start="2">
+        <li><b>Energi air</b><br>
+          Energi air merupakan salah satu sumber energi terbarukan yang melimpah di dunia. Energi air adalah sumber energi terbarukan yang berasal dari kekuatan air dengan menggunakan bendungan atau struktur pengalihan untuk mengubah aliran alami sungai atau badan air lainnya. Contoh pemanfaatan energi air dapat kita lihat pada Pembangkit Listrik Tenaga Air (PLTA) yang bergantung pada sistem siklus air yang terus diisi ulang untuk menghasilkan listrik.
+          <div class="text-center mb-3 mt-2">
+            <img src="m4.png" alt="PLTA Waduk Citara Purwakarta" class="img-fluid rounded" style="max-width:400px;">
+            <div class="small mt-2">PLTA Waduk Citara Purwakarta (purwakarta.pikiran-rakyat.com)</div>
+          </div>
+          Gambar di atas merupakan salah satu contoh PLTA yang ada di Indonesia, dan menjadi PLTA terbesar di Indonesia dengan daya mencapai 1.008 MW. Dengan kemampuan energi listrik rata-rata 1,428 Giga Watt Hour (GWH) per tahun. PLTA ini terkoneksi dengan jaringan untuk memenuhi kebutuhan listrik pulau Jawa-Bali.
+        </li>
+        <li><b>Energi angin</b><br>
+          Energi angin adalah energi yang dihasilkan dari gerakan udara atau angin yang bisa dimanfaatkan untuk menghasilkan listrik atau melakukan pekerjaan mekanis. Energi ini termasuk dalam kategori energi terbarukan karena berasal dari sumber yang tidak akan habis.
+          <div class="text-center mb-3 mt-2">
+            <img src="m5.png" alt="Kincir angin PLTB Sidrap, Sulawesi Selatan" class="img-fluid rounded" style="max-width:400px;">
+            <div class="small mt-2">Kincir angin PLTB Sidrap, Sulawesi Selatan (kumparan.com)</div>
+          </div>
+          PLTB Sidrap merupakan pembangkit listrik tenaga angin terbesar di Indonesia. Dengan kapasitas 75 MW, pembangkit ramah lingkungan yang terdiri dari 30 turbin kincir angin yang masing-masing berkapasitas 2,5 MW. Model turbin yang digunakan yaitu dari Gamesa Lolica Corporation pada menara baja setinggi 80 meter dengan panjang baling-nalin 75 meter.<br>
+          Terdapat beberapa dampak negatif dari energi angin, yaitu:
+          <ul>
+            <li>Pengaruh terhadap habitat dan satwa</li>
+            <li>Gangguan visual dan kesehatan</li>
+            <li>Pemasangan dan pemeliharaan</li>
+            <li>Efek pada pola cuaca lokal</li>
+            <li>Resiko kecelakaan dan kerusakan</li>
+          </ul>
+        </li>
+        <li><b>Energi panas bumi</b><br>
+          Energi panas bumi adalah energi panas yang terdapat dan terbentuk di dalam kerak bumi. Menurut pasal 1 UU No. 27 tahun 2003 tentang Panas Bumi: ”Panas bumi adalah sumber energi panas yang terkandung di dalam air panas, uap air, dan bantuan bersama mineral ikutan dan gas lainnya yang secara genetik semuanya tidak dapat dipisahkan dalam suatu sistem panas bumi dan untuk pemanfaatannya diperlukan proses penambangaan.”
+          <div class="text-center mb-3 mt-2">
+            <img src="m6.jpg" alt="PLTP Ulubelu Tanggamus, Lampung" class="img-fluid rounded" style="max-width:400px;">
+            <div class="small mt-2">PLTP Ulubelu Tanggamus, Lampung (zonaebt.com)</div>
+          </div>
+          Gambar di atas merupakan salah satu PLPT yang ada di Indonesia, terletak di Ulubelu. Ulubelu terletak di kaki gunung Tanggamus dan menjadi wilayah kerja geothermal PGE yang memiliki kapasitas terpasang sebesar 4×55 MW. Pembangkitan tersebut berkonstribusi terhadap 25 persen kebutuhan listrik provinsi Lampung.<br>
+          Sejak tahun 2011, PGE telah mengembangkan proyek geothermal di area Ulubelu, yang telah dimanfaatkan oleh sekitar 244.000 rumah. Hal tersebut membantu menekan laju emisi dan menjaga keasrian lingkungan dengan memberikan konstribusi positif dalam up
+        </li>
+        <li><b>Biomassa</b><br>
+          Biomassa merupakan bahan organik yang dihasilkan melalui proses fotosintetik, baik berupa produk atau buangan. Contohnya adalah tanaman, pohon, ubi, rumput, kotoran ternak, limbah, dan sebagainya. Kelebihan dari sumber energi biomassa adalah terbarukan sehingga dapat menyediakan sumber energi secara berkelanjutan. Mengutip dari laman IPB, potensi biomassa di Indonesia sangat besar yaitu limbah hewan dan tumbuhan adalah bahan baku melimpah di negara ini.<br>
+          Penggunaan limbah menjadi bahan bakar akan memberikan 3 keuntungan yaitu peningkatan efisiensi energi secara keseluruhan, penghematan biaya dan mengurangi tempat penimbunan sampah terutama di perkotaan yang lahannya lebih sempit di banding pedesaan.
+          <div class="text-center mb-3 mt-2">
+            <img src="m7.jpg" alt="Briket sebagai pengganti bahan bakar" class="img-fluid rounded" style="max-width:400px;">
+            <div class="small mt-2">Briket sebagai pengganti bahan bakar (tirto.id)</div>
+          </div>
+          Briket adalah bahan bakar padat berupa bioarang yang berasal dari bahan mengandung karbon, bernilai kalori tinggi, dan bisa menyala dengan durasi lama. Briket dapat dibuat dengan memanfaatkan limbah pertanian dan kehutanan yang diubah menjadi bahan bakar padat sehingga ketersediaannya cukup melimpah, karena itu briket bisa menjadi bahan bakar alternatif.<br>
+          Manfaatan briket sebagai energi alternatif jelas cukup potensial. Setidaknya ada dua alasan yang mendasari mengapa briket bisa dijadikan alternatif.
+          <ol type="a">
+            <li>Briket memiliki nilai kalor lebih tinggi dibandingkan pembakaran biomassa biasa. Nilai kalor yang muncul dari pembakaran biomassa kurang lebih 3.000 kal. Sebaliknya, pembakaran briket bioarang mampu memunculkan energi sehingga 5.000 kal dan bahkan lebih.</li>
+            <li>Bahan baku briket arang dari biomassa kini tersedia dalam jumlah besar.</li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+    <div id="materi-manfaat-content" class="mt-4 materi-content-justify" style="display:none;">
+      <h3 class="fw-bold">MANFAAT ENERGI TERBARUKAN</h3>
+      <p>Beberapa tahun terakhir, perubahan iklim dan kekhawatiran terhadap ketersediaan sumber energi konvensional telah mendorong dunia untuk beralih ke sumber energi terbarukan atau berkelanjutan. Energi terbarukan seperti, energi surya, energi angin, energi air, panas bumi, dan biomassa, telah menjadi fokus utama dalam upaya menciptakan masa depan yang lebih hijau dan berkelanjutan. Berikut adalah beberapa manfaat dari pemanfaatan energi terbarukan:</p>
+      <ul>
+        <li><b>Ramah lingkungan</b><br>Energi terbarukan menghasilkan sedikit atau bahkan tidak ada emisi gas rumah kaca dan polutan udara, mengurangi resiko perubahan iklim dan memperbaiki kualitas udara.</li>
+        <li><b>Ketersediaan yang berkelanjutan</b><br>Dengan memanfaatkan sumber energi terbarukan, kita dapat mengurangi ketergantungan pada bahan bakar fosil yang semakin langka dan berkontribusi pada keberlanjutan ekonomi global.</li>
+        <li><b>Ciptakan lapangan kerja</b><br>Industri energi terbarukan menciptakan peluang pekerjaan yang signifikan. Proyek-proyek pembangkit listrik tenaga surya, angin, air memerlukan tenaga kerja yang terampil dan tidak hanya mendukung pertumbuhan ekonomi lokal tetapi juga memberikan konstribusi positif terhadap pekerjaan seluruh dunia.</li>
+        <li><b>Stabilitas energi</b><br>Energi terbarukan dapat membantu menciptakan kestabilan sistem energi. Sebagian besar sumber energi terbarukan bersifat terdistribusi dan dapat diakses secara lokal, mengurangi resiko gangguan pasokan energi yang disebabkan oleh bencana alam atau konflik politik di daerah tertentu.</li>
+        <li><b>Peningkatan akses energi</b><br>Energi terbarukan juga dapat meningkatkan akses energi di daerah terpencil atau negara berkembang yang masih mengalami kesulitan dalam memenuhi kebutuhan listrik. Sistem energi terbarukan yang mudah diimplementasikan dapat menjadi solusi untuk membawa listrik ke komunitas yang sebelumnya tidak terlayani.</li>
+      </ul>
+      <p>Berikut terdapat link video inovasi pemanfaatan energi terbarukan yang dapat teman-teman tonton.</p>
+      <ul>
+        <li><a href="video.html#biogas-mini" class="link-video-manfaat text-warning fw-bold">Biogas mini rumahan: Energi alternatif untuk memasak yang ramah lingkungan</a></li>
+        <li><a href="video.html#kompor-biomassa" class="link-video-manfaat text-warning fw-bold">Inovasi kompor biomassa untuk dunia yang lebih hijau</a></li>
+      </ul>
+    </div>
+    <div id="materi-kelebihan-content" class="mt-4 materi-content-justify" style="display:none;">
+      <h3 class="fw-bold">KELEBIHAN ENERGI TERBARUKAN</h3>
+      <p>Energi memiliki banyak kelebihan sehingga banyak alasan mengapa energi terbarukan harus dikembangkan dan dimanfaatkan secara luas.<br>Beberapa kelebihan energi terbarukan, yaitu:</p>
+      <ol>
+        <li>Tersedia melimpah di alam, tidak akan habis, dan ramah lingkungan</li>
+        <li>Sumber energi terbarukan bisa dimanfaatkan secara gratis</li>
+        <li>Perawatan relatif lebih mudah dan murah di bandingkan teknologi yang memanfaatkan energi tak terbarukan</li>
+        <li>Mandiri energi, tidak perlu mengimpor energi tak terbarukan atau energi fosil dari luar negeri</li>
+        <li>Membantu mendorong perekonomian dan menciptakan peluang kerja</li>
+        <li>Lebih murah daripada energi fosil dalam jangka panjang. Beberapa teknologi mudah diterapkan di daerah-daerah terpencil</li>
+        <li>Produksi bisa dihasilkan di berbagai tempat, tak perlu disentralisasi.</li>
+      </ol>
+    </div>
+    <div id="materi-kekurangan-content" class="mt-4 materi-content-justify" style="display:none;">
+      <h3 class="fw-bold">KEKURANGAN ENERGI TERBARUKAN</h3>
+      <p>Meskipun penuh akan manfaat dan memiliki banyak kelebihan, energi terbarukan juga memiliki kekurangaan. Berikut kekurangan energi terbarukan:</p>
+      <ol>
+        <li>Biaya awal besar atau investasi yang membutuhkan dana yang cukup banyak</li>
+        <li>Sebagian besar sumber energi terbarukan terkendala faktor cuaca</li>
+        <li>Energi tambahan yang dihasilkan energi terbarukan harus disimpan dalam sistem penyimpanan seperti baterai supaya tidak terbuang sia-sia</li>
+        <li>Masing-masing sumber energi terbarukan memiliki kelemahan teknis dan sosialnya sendiri</li>
+      </ol>
+      <p>Beberapa teknologi pemanfaatan energi terbarukan masih bersifat eksperimental seperti energi gelombang laut, energi pasang surut air laut, dan energi panas.</p>
+    </div>
+    <div id="latihan-soal-content" class="mt-4 materi-content-justify" style="display:none;">
+      <h3 class="fw-bold">Latihan Soal</h3>
+      <p>Halo teman-teman<br>Silahkan kerjakan latihan soal berikut, untuk mengevaluasi pembelajaran hari ini.</p>
+      <form id="form-latihan-soal">
+        <div class="soal mb-4">
+          <p><b>Soal 1 (Menganalisis – C4)</b></p>
+          <p>Sebuah daerah pegunungan memiliki curah hujan tinggi, banyak aliran sungai deras, tetapi jaringan listrik belum menjangkau seluruh wilayah. Berdasarkan informasi tersebut, sumber energi terbarukan yang paling sesuai untuk dimanfaatkan sebagai pembangkit listrik adalah...</p>
+          <div class="opsi d-flex flex-column gap-2 align-items-start" data-jawab="C">
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="A">A. Energi surya</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="B">B. Energi angin</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="C">C. Energi air (hidroelektrik)</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="D">D. Energi biomassa</button>
+          </div>
+        </div>
+        <div class="soal mb-4">
+          <p><b>Soal 2 (Menganalisis – C4)</b></p>
+          <p>Perhatikan data berikut:</p>
+          <ul>
+            <li>Lokasi A: Tersedia banyak limbah pertanian dan kotoran ternak</li>
+            <li>Lokasi B: Terletak di daerah gurun dengan paparan sinar matahari tinggi</li>
+            <li>Lokasi C: Di daerah pantai dengan angin kencang namun tidak stabil</li>
+            <li>Lokasi D: Di daerah pegunungan, terdapat aliran sungai besar</li>
+          </ul>
+          <p>Manakah pasangan lokasi dan sumber energi yang kurang tepat?</p>
+          <div class="opsi d-flex flex-column gap-2 align-items-start" data-jawab="C">
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="A">A. Lokasi A – Biogas</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="B">B. Lokasi B – Panel Surya</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="C">C. Lokasi C – Turbin Angin</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="D">D. Lokasi D – Pembangkit Listrik Tenaga Air</button>
+          </div>
+        </div>
+        <div class="soal mb-4">
+          <p><b>Soal 3 (Mengevaluasi – C5)</b></p>
+          <p>Pemerintah sedang mempertimbangkan dua opsi energi terbarukan:</p>
+          <ul>
+            <li>Opsi A: Membangun panel surya di dataran tinggi yang terpapar sinar matahari sepanjang tahun.</li>
+            <li>Opsi B: Mengembangkan pembangkit listrik tenaga angin di daerah pantai yang berangin namun sering terjadi badai.</li>
+          </ul>
+          <p>Jika kamu adalah konsultan energi, opsi mana yang lebih layak dipilih, dan mengapa?</p>
+          <div class="opsi d-flex flex-column gap-2 align-items-start" data-jawab="A">
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="A">A. Opsi A, karena lebih stabil dan memiliki risiko gangguan cuaca lebih rendah</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="B">B. Opsi B, karena angin di daerah pantai sangat kuat dan menghasilkan energi lebih besar</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="C">C. Opsi A, karena lebih murah meskipun efisiensinya lebih rendah</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="D">D. Opsi B, karena tidak memerlukan lahan luas seperti panel surya</button>
+          </div>
+        </div>
+        <div class="soal mb-4">
+          <p><b>Soal 4 (Mencipta – C6)</b></p>
+          <p>Seorang siswa ditugaskan merancang sistem pemanfaatan energi terbarukan di sekolah untuk menurunkan tagihan listrik dan mengedukasi warga sekolah. Berdasarkan kondisi berikut:</p>
+          <ul>
+            <li>Sekolah berada di dataran rendah dengan paparan sinar matahari tinggi</li>
+            <li>Terdapat lahan kosong di atap sekolah</li>
+            <li>Kebutuhan listrik cukup tinggi pada siang hari</li>
+          </ul>
+          <p>Apa solusi terbaik yang dapat siswa usulkan?</p>
+          <div class="opsi d-flex flex-column gap-2 align-items-start" data-jawab="B">
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="A">A. Membangun PLTA mini di sekolah</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="B">B. Memasang panel surya di atap sekolah</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="C">C. Membuat generator tenaga angin</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="D">D. Membakar sampah untuk menghasilkan listrik</button>
+          </div>
+        </div>
+        <div class="soal mb-4">
+          <p><b>Soal 5 (Mencipta – C6)</b></p>
+          <p>Sekelompok siswa mengikuti lomba membuat model sistem energi ramah lingkungan untuk daerah pesisir. Mereka ingin memanfaatkan sumber daya yang tersedia secara lokal. Sistem mana yang paling inovatif dan sesuai konteks?</p>
+          <div class="opsi d-flex flex-column gap-2 align-items-start" data-jawab="C">
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="A">A. Pembangkit listrik tenaga nuklir mini</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="B">B. Panel surya di dalam ruangan</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="C">C. Kombinasi turbin angin dan panel surya di area pantai</button>
+            <button type="button" class="btn btn-outline-light btn-soal w-100 text-start" data-jawaban="D">D. Biogas dari limbah rumah tangga padat di laut</button>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <img src="rubik.jpeg" alt="Rubrik Penilaian" class="img-fluid rounded" style="max-width:400px;">
+          <div class="small mt-2">Rubrik Penilaian</div>
+        </div>
+        <div class="text-center mt-4">
+          <button type="button" class="btn btn-warning fw-bold" id="cek-score">Cek Skor</button>
+        </div>
+        <div class="text-center mt-3">
+          <span id="score-result" class="fw-bold fs-5"></span>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; Website By : Marifatus Soleha 2113022028 Pendidikan Fisika
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleMateriContent(id) {
+      const el = document.getElementById(id);
+      const isVisible = el.style.display === 'block';
+      [
+        'materi-pengertian-content',
+        'materi-manfaat-content',
+        'materi-kelebihan-content',
+        'materi-kekurangan-content',
+        'latihan-soal-content'
+      ].forEach(function(contentId) {
+        document.getElementById(contentId).style.display = 'none';
+      });
+      if (!isVisible) {
+        el.style.display = 'block';
+        window.scrollTo({
+          top: el.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      }
+    }
+    document.getElementById('menu-pengertian').addEventListener('click', function() {
+      toggleMateriContent('materi-pengertian-content');
+    });
+    document.getElementById('menu-manfaat').addEventListener('click', function() {
+      toggleMateriContent('materi-manfaat-content');
+    });
+    document.getElementById('menu-kelebihan').addEventListener('click', function() {
+      toggleMateriContent('materi-kelebihan-content');
+    });
+    document.getElementById('menu-kekurangan').addEventListener('click', function() {
+      toggleMateriContent('materi-kekurangan-content');
+    });
+    document.getElementById('menu-latihan').addEventListener('click', function() {
+      toggleMateriContent('latihan-soal-content');
+    });
+    // Soal interaktif: jawaban hanya bisa dipilih, warna benar/salah muncul setelah cek skor
+    document.querySelectorAll('.opsi').forEach(function(opsiDiv) {
+      opsiDiv.querySelectorAll('.btn-soal').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          opsiDiv.querySelectorAll('.btn-soal').forEach(function(b) {
+            b.classList.remove('selected-jawab');
+          });
+          btn.classList.add('selected-jawab');
+        });
+      });
+    });
+    // Skor dan penilaian akhir
+    document.getElementById('cek-score').addEventListener('click', function() {
+      let score = 0;
+      document.querySelectorAll('.opsi').forEach(function(opsiDiv) {
+        opsiDiv.querySelectorAll('.btn-soal').forEach(function(btn) {
+          btn.classList.remove('btn-success', 'btn-danger');
+          btn.classList.add('btn-outline-light');
+        });
+        const selected = opsiDiv.querySelector('.selected-jawab');
+        if (selected) {
+          if (selected.getAttribute('data-jawaban') === opsiDiv.getAttribute('data-jawab')) {
+            selected.classList.remove('btn-outline-light');
+            selected.classList.add('btn-success');
+            score += 20;
+          } else {
+            selected.classList.remove('btn-outline-light');
+            selected.classList.add('btn-danger');
+          }
+        }
+      });
+      document.getElementById('score-result').textContent = 'Skor Anda: ' + score + ' / 100';
+    });
+  </script>
+</body>
+</html>

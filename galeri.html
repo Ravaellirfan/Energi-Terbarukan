@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeri - Energi Terbarukan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('yu.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .page-wrapper {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-wrapper {
+      flex: 1;
+      padding-top: 120px;
+      padding-bottom: 40px;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+
+    .nav-link.active, .nav-link:hover {
+      color: #ffee58 !important;
+    }
+
+    .gallery-container {
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+
+    .gallery-img-frame {
+      border: 3px solid rgba(255, 255, 255, 0.6);
+      border-radius: 15px;
+      padding: 5px;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+      height: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .gallery-img-frame:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .gallery-caption {
+      text-align: justify;
+      color: #fff;
+      font-size: 1.1rem;
+      margin-top: 12px;
+      min-height: 120px;
+      display: none;
+      background: rgba(0,0,0,0.7);
+      border-radius: 10px;
+      padding: 12px 16px;
+    }
+
+    .gallery-caption.active {
+      display: block;
+      animation: fadeIn 0.3s;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .gallery-number {
+      position: absolute;
+      top: 10px;
+      left: 18px;
+      background: rgba(0,0,0,0.7);
+      color: #ffee58;
+      font-weight: bold;
+      font-size: 1.3rem;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><i class="bi bi-globe2 me-2"></i>Energi Terbarukan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="beranda.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="judul.html">Judul</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="petunjuk.html">Petunjuk</a></li>
+            <li class="nav-item"><a class="nav-link" href="modul.html">Modul</a></li>
+            <li class="nav-item"><a class="nav-link" href="lkpd.html">LKPD</a></li>
+            <li class="nav-item"><a class="nav-link" href="materi.html">Materi</a></li>
+            <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+            <li class="nav-item"><a class="nav-link active" href="galeri.html">Galeri</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ISI GALERI -->
+    <div class="content-wrapper container">
+      <div class="gallery-container">
+        <h2 class="text-center fw-bold mb-4"><i class="bi bi-images me-2"></i>Galeri Energi Terbarukan</h2>
+        <div class="row g-4">
+          <div class="col-sm-6 col-md-4 position-relative">
+            <div class="gallery-number">1</div>
+            <div class="gallery-img-frame" onclick="toggleCaption(0)">
+              <img src="kincir.jpeg" class="gallery-img" alt="Kincir Angin">
+            </div>
+            <div class="gallery-caption" id="caption-0">Keuntungan utama dari penggunaan pembangkit listrik tenaga angin secara prinsipnya adalah disebabkan karena sifatnya yang terbarukan. Hal ini berarti eksploitasi sumber energi ini tidak akan membuat sumber daya angin yang berkurang seperti halnya penggunaan bahan bakar fosil. Oleh karenanya tenaga angin dapat berkontribusi dalam ketahanan energi dunia di masa depan. Tenaga angin juga merupakan sumber energi yang ramah lingkungan, dimana penggunaannya tidak mengakibatkan emisi gas buang atau polusi yang berarti ke lingkungan.</div>
+          </div>
+          <div class="col-sm-6 col-md-4 position-relative">
+            <div class="gallery-number">2</div>
+            <div class="gallery-img-frame" onclick="toggleCaption(1)">
+              <img src="panel.jpg" class="gallery-img" alt="Panel Surya">
+            </div>
+            <div class="gallery-caption" id="caption-1">Panel surya mudah dirawat dengan perawatan sederhana secara rutin, terutama di awal penggunaan. Biaya pemeliharaannya rendah, bahkan tahun pertama biasanya sudah termasuk dalam kontrak pemasangan. Harga panel juga turun hingga 80% dalam tujuh tahun terakhir, membuatnya lebih hemat. Selain itu, panel surya tahan lama dengan usia pakai 20–25 tahun dan tersedia dalam berbagai jenis seperti monocrystalline, thin film, dan polycrystalline.</div>
+          </div>
+          <div class="col-sm-6 col-md-4 position-relative">
+            <div class="gallery-number">3</div>
+            <div class="gallery-img-frame" onclick="toggleCaption(2)">
+              <img src="plta.jpg" class="gallery-img" alt="PLTA">
+            </div>
+            <div class="gallery-caption" id="caption-2">Air sebagai sumber energi memiliki banyak keunggulan, antara lain bersih, terbarukan, hemat biaya, dan efisien. Pembangkit listrik tenaga air tidak menghasilkan polusi atau gas rumah kaca, tidak memerlukan bahan bakar, dan memanfaatkan aliran air untuk menghasilkan listrik secara berkelanjutan. Dengan sifatnya yang terbarukan dan ramah lingkungan, air menjadi sumber energi andal untuk memenuhi kebutuhan masa kini dan masa depan.<br>PLTA memiliki biaya operasional rendah karena tidak memerlukan bahan bakar, menggunakan teknologi sederhana, dan hampir tidak menghasilkan emisi gas rumah kaca. Selain itu, PLTA dapat mendukung program lain seperti perikanan, PDAM, dan irigasi, serta bermanfaat bagi masyarakat sekitar melalui pemanfaatan massa air yang besar.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      &copy; 2025 Energi Terbarukan | Dibuat oleh Tim Energi Terbarukan
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleCaption(idx) {
+      for (let i = 0; i < 3; i++) {
+        const cap = document.getElementById('caption-' + i);
+        if (i === idx) {
+          cap.classList.toggle('active');
+        } else {
+          cap.classList.remove('active');
+        }
+      }
+    }
+  </script>
+</body>
+</html>

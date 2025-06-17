@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Judul Pembelajaran - Energi Terbarukan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('yu.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .accordion-button,
+.accordion-body {
+  color: white !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ffee58 !important;
+}
+
+    .page-wrapper {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-wrapper {
+      flex: 1;
+      padding-top: 100px;
+      padding-bottom: 40px;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+
+    .nav-link.active, .nav-link:hover {
+      color: #ffee58 !important;
+    }
+
+    .glass-box {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 30px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+
+    .accordion-item {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: none;
+    }
+
+    .accordion-button {
+      background-color: transparent;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #ffee58;
+    }
+
+    .accordion-body a {
+      color: #ffee58;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .accordion-body a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    body.fade-out {
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+    body.fade-in {
+      opacity: 1;
+      transition: opacity 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"><i class="bi bi-globe2 me-2"></i>Energi Terbarukan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto text-uppercase">
+            <li class="nav-item"><a class="nav-link" href="beranda.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link active" href="judul.html">Judul</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="petunjuk.html">Petunjuk</a></li>
+            <li class="nav-item"><a class="nav-link" href="modul.html">Modul</a></li>
+            <li class="nav-item"><a class="nav-link" href="lkpd.html">LKPD</a></li>
+            <li class="nav-item"><a class="nav-link" href="materi.html">Materi</a></li>
+            <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ISI -->
+    <div class="content-wrapper container">
+      <div class="glass-box">
+        <h3 class="text-center fw-bold mb-4"><i class="bi bi-journal-text me-2"></i>Daftar Pembelajaran</h3>
+
+        <div class="accordion" id="accordionJudul">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                Pengertian Energi Terbarukan
+              </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionJudul">
+              <div class="accordion-body">
+                Energi terbarukan didefinisikan sebagai energi yang bersumber dari sumber energi yang dapat diperbarui. Sumber ini tidak akan habis dan dapat digunakan tanpa batas waktu, karena dapat diperbaharui dalam waktu relatif singkat. Energi terbarukan menjadi pilihan sangat baik karena sifatnya yang netral karbon, minim polusi lingkungan, dan didukung oleh berbagai pihak sebagai alternatif energi fosil yang tidak terbarukan.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                Dampak Positif dan Negatif dari Energi Terbarukan
+              </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionJudul">
+              <div class="accordion-body">
+                <strong>Dampak Positif:</strong> Ramah lingkungan, mengurangi emisi dan polusi.<br>
+                <strong>Dampak Negatif:</strong> Biaya awal tinggi, ketergantungan cuaca, dan dampak lokal pada ekosistem.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                Tantangan dalam Penggunaan Energi Terbarukan
+              </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionJudul">
+              <div class="accordion-body">
+                Tantangan utama dalam penggunaan energi terbarukan adalah biaya investasi yang tinggi serta ketergantungan pada kondisi cuaca dan infrastruktur.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                Solusi dan Peluang Masa Depan
+              </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionJudul">
+              <div class="accordion-body">
+                Pemerintah dan lembaga keuangan dapat memberikan insentif dan mendukung pengembangan teknologi energi terbarukan agar lebih terjangkau dan efisien.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                Konten Platform
+              </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionJudul">
+              <div class="accordion-body">
+                Platform ini menyediakan:<br>
+                ➤ <a href="petunjuk.html">Petunjuk</a><br>
+                ➤ <a href="modul.html">Modul</a><br>
+                ➤ <a href="lkpd.html">LKPD</a><br>
+                ➤ <a href="materi.html">Materi</a><br>
+                ➤ <a href="video.html">Video</a><br>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      &copy; Website By : Marifatus Soleha 2113022028 Pendidikan Fisika
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
