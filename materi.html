@@ -314,6 +314,7 @@
         <div class="text-center mt-3">
           <span id="score-result" class="fw-bold fs-5"></span>
         </div>
+        <div id="jawaban-kunci"></div>
       </form>
     </div>
 
@@ -361,6 +362,14 @@
       toggleMateriContent('latihan-soal-content');
     });
     // Soal interaktif: jawaban hanya bisa dipilih, warna benar/salah muncul setelah cek skor
+    let scoreSudahDikoreksi = false;
+    const kunciJawaban = [
+      'C. Energi air (hidroelektrik)',
+      'C. Lokasi C – Turbin Angin',
+      'A. Opsi A, karena lebih stabil dan memiliki risiko gangguan cuaca lebih rendah',
+      'B. Memasang panel surya di atap sekolah',
+      'C. Kombinasi turbin angin dan panel surya di area pantai'
+    ];
     document.querySelectorAll('.opsi').forEach(function(opsiDiv) {
       opsiDiv.querySelectorAll('.btn-soal').forEach(function(btn) {
         btn.addEventListener('click', function() {
@@ -368,6 +377,16 @@
             b.classList.remove('selected-jawab');
           });
           btn.classList.add('selected-jawab');
+          // Reset warna jika sudah pernah cek skor
+          if (scoreSudahDikoreksi) {
+            opsiDiv.querySelectorAll('.btn-soal').forEach(function(b) {
+              b.classList.remove('btn-success', 'btn-danger');
+              b.classList.add('btn-outline-light');
+            });
+            document.getElementById('score-result').textContent = '';
+            document.getElementById('jawaban-kunci').innerHTML = '';
+            scoreSudahDikoreksi = false;
+          }
         });
       });
     });
@@ -392,6 +411,14 @@
         }
       });
       document.getElementById('score-result').textContent = 'Skor Anda: ' + score + ' / 100';
+      // Tampilkan kunci jawaban
+      let html = '<div class="mt-4"><h5 class="fw-bold text-warning">Kunci Jawaban:</h5><ol class="text-white fs-6">';
+      kunciJawaban.forEach(function(jwb, idx) {
+        html += '<li>' + jwb + '</li>';
+      });
+      html += '</ol></div>';
+      document.getElementById('jawaban-kunci').innerHTML = html;
+      scoreSudahDikoreksi = true;
     });
   </script>
 </body>
